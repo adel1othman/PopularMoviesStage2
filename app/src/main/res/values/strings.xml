@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Popular Movies Stage 2</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="favorite_movies">My favorite Movies</string>
+    <string name="no_movies">No movies found.</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="insert_movie_successful">Movie added to your favorite collection</string>
+    <string name="delete_movie_successful">Movie removed from your favorite collection</string>
+    <string name="no_favorite_movies">You don\'t have any movie in your favorite collection</string>
+    <string name="trailers">Trailers</string>
+    <string name="user_reviews">User Reviews</string>
+</resources>
