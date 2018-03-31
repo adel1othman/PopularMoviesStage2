@@ -25,8 +25,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private String STATE_KEY;
-    private String SORT_CRITERION_KEY;
-    private final int DEFAULT_POSITION_MAIN = -1;
     private String REQUEST_URL;
 
     private static final int Movie_LOADER_ID = 1;
@@ -211,10 +209,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
 
         mListState = gridLayoutManager.onSaveInstanceState();
-        /*mAnchorPosition = gridLayoutManager.findLastVisibleItemPosition();
-        mStateArray[0] = mSelectedItem;
-        mStateArray[1] = mAnchorOffset;
-        mStateArray[2] = mAnchorPosition;*/
         outState.putParcelable(STATE_KEY, mListState);
     }
 

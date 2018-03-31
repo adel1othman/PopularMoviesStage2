@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="POPULAR_MOVIES_API_KEY"
-            android:value="7ecc563f28ea7e005459510ae89fe0d2" />
+            android:value="" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
