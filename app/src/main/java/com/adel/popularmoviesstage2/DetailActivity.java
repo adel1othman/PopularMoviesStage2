@@ -30,7 +30,7 @@ import static com.adel.popularmoviesstage2.MovieAdapter.favoriteMovies;
 public class DetailActivity extends AppCompatActivity {
     public static final String EXTRA_POSITION = "extra_position";
     private static final int DEFAULT_POSITION = -1;
-    int position = -1;
+    static int position = -1;
     List<Movie> movies;
     private String REQUEST_URL_TRAILERS;
     private String REQUEST_URL_REVIEWS;

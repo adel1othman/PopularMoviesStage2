@@ -26,7 +26,13 @@ public class MovieLoader extends AsyncTaskLoader<List<Movie>> {
             return null;
         }
 
-        List<Movie> movies = QueryUtils.fetchMovieData(mUrl);
+        List<Movie> movies = null;
+        if (MainActivity.opstionsID == R.id.action_favorite){
+            movies = MovieAdapter.favoriteMovies;
+        }else {
+            movies = QueryUtils.fetchMovieData(mUrl);
+        }
+
         return movies;
     }
 }

@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static android.content.ContentValues.TAG;
-import static com.adel.popularmoviesstage2.MainActivity.opstionsID;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
 
@@ -179,7 +178,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
                         Toast.makeText(context, context.getString(R.string.delete_movie_successful),Toast.LENGTH_SHORT).show();
 
-                        if (opstionsID == R.id.action_favorite){
+                        if (MainActivity.opstionsID == R.id.action_favorite){
                             delete(movieIndex);
                         }
 
