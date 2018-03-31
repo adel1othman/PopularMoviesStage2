@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class DetailActivity extends AppCompatActivity {
     LoaderManager.LoaderCallbacks<String[]> myCallbacksTrailers;
     LoaderManager.LoaderCallbacks<List<String>> myCallbacksReviews;
 
+    ScrollView scrollView;
     ImageView ivPoster;
     TextView tvTitle;
     TextView tvReleaseDate;
@@ -63,6 +65,7 @@ public class DetailActivity extends AppCompatActivity {
 
         movies = allMovies;
 
+        scrollView = findViewById(R.id.sc_container);
         ivPoster = findViewById(R.id.iv_poster);
         tvTitle = findViewById(R.id.tv_title);
         tvReleaseDate = findViewById(R.id.tv_release);
